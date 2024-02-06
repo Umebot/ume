@@ -1,0 +1,29 @@
+# Cache
+## MacOS
+.DS_Store
+
+## Editors
+.idea/
+.vscode/
+
+## JavaScript
+.next/
+dist/
+build/
+out/
+
+# Keys & sets
+*.env
+
+# Environments
+env/
+node_modules/
+# package-lock.json
+
+# Data
+/data/
+
+# Copyright
+## Fonts
+*.otf
+*.ttf

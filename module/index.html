@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <title>UME</title>
+  </head>
+  <body>
+    <!-- Google Tag Manager -->
+    <script
+      strategy="afterInteractive"
+      src="https://www.googletagmanager.com/gtag/js?id=G-5BM073MHWB"
+    ></script>
+    <script strategy="afterInteractive">
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      (window.dataLayer = window.dataLayer || []),
+        gtag('js', new Date()),
+        gtag('config', 'G-5BM073MHWB');
+    </script>
+
+    <!-- Module -->
+    <script defer="defer" src="main.js"></script>
+    <link href="main.css" rel="stylesheet" />
+
+    <!-- Init -->
+    <div id="root"></div>
+    <script defer>
+      document.addEventListener('DOMContentLoaded', function () {
+        renderQuiz('root');
+      });
+    </script>
+  </body>
+</html>
