@@ -119,6 +119,10 @@
   background-color: var(--bg);
 }
 
+.breezu .start-button {
+  font-weight: 400;
+}
+
 /* Close */
 
 .breezu .close {

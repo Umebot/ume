@@ -264,7 +264,13 @@ const Container = () => {
   return (
     <>
       <div className='open'>
-        <button onClick={() => setPopUp(true)}>Открыть опрос</button>
+        <button
+          type='button'
+          className='start-button'
+          onClick={() => setPopUp(true)}
+        >
+          Нажмите, чтобы подобрать аппарат
+        </button>
       </div>
       {popup ? (
         <PopUp
