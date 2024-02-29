@@ -6,28 +6,41 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'G-5BM073MHWB');
+    </script>
+    <!-- End Google Tag Manager -->
     <title>UME</title>
   </head>
   <body>
-    <!-- Google Tag Manager -->
-    <script
-      strategy="afterInteractive"
-      src="https://www.googletagmanager.com/gtag/js?id=G-5BM073MHWB"
-    ></script>
-    <script strategy="afterInteractive">
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      (window.dataLayer = window.dataLayer || []),
-        gtag('js', new Date()),
-        gtag('config', 'G-5BM073MHWB');
-    </script>
-
     <div id="root"></div>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         renderQuiz('root');
       });
     </script>
+
+    <!-- Google Tag Manager (noscript) --><noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=G-5BM073MHWB"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe> </noscript
+    ><!-- End Google Tag Manager (noscript) -->
   </body>
 </html>
