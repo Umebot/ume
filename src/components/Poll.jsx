@@ -56,8 +56,7 @@ const Header = ({ fact, exp, setPopUp }) => (
     <i
       className='close fa-solid fa-circle-xmark'
       onClick={() => {
-        window.dataLayer.push({
-          event: 'survey_event',
+        gtag('event', 'survey_event', {
           eventCategory: 'Survey',
           eventAction: 'ButtonClick',
           eventLabel: 'close survey',
@@ -75,8 +74,7 @@ const Footer = ({ clearSurvey, backSurvey }) => (
       <button
         className='secondary-buttosn'
         onClick={() => {
-          window.dataLayer.push({
-            event: 'survey_event',
+          gtag('event', 'survey_event', {
             eventCategory: 'Survey',
             eventAction: 'ButtonClick',
             eventLabel: 'back button',
@@ -90,8 +88,7 @@ const Footer = ({ clearSurvey, backSurvey }) => (
       <button
         className='secondary-button'
         onClick={() => {
-          window.dataLayer.push({
-            event: 'survey_event',
+          gtag('event', 'survey_event', {
             eventCategory: 'Survey',
             eventAction: 'ButtonClick',
             eventLabel: 'repeat button',
@@ -139,8 +136,7 @@ const Poll = ({
         <a
           href={findLink(compilation, survey, isMobile)}
           onClick={() =>
-            window.dataLayer.push({
-              event: 'survey_event',
+            gtag('event', 'survey_event', {
               eventCategory: 'Survey',
               eventAction: 'ButtonClick',
               eventLabel: 'watch compilation',
@@ -219,8 +215,7 @@ const Container = () => {
     setPopUp(true);
 
     // Event: Option Selected
-    window.dataLayer.push({
-      event: 'survey_event',
+    gtag('event', 'survey_event', {
       eventCategory: 'Survey',
       eventAction: 'Option Selected',
       eventLabel: `step ${step} – option ${idx + 1}`,
@@ -228,8 +223,7 @@ const Container = () => {
 
     // Event: Survey Completed
     if (questions[step].answers[idx].next === null) {
-      window.dataLayer.push({
-        event: 'survey_event',
+      gtag('event', 'survey_event', {
         eventCategory: 'Survey',
         eventAction: 'Survey Completed',
       });
